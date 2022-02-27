@@ -10,7 +10,7 @@ const App = () => {
     <div className='app'>
         <Navbar />
       <main className='main'>
-        <Layout>
+        <Layout className='main-container'>
           <div className='route'>
             <Routes>
               <Route exact path='/' element={<Homepage />} />
@@ -27,7 +27,7 @@ const App = () => {
             Cryptoverse <br />
             All rights reserved
           </Typography.Title>
-          <Space>
+          <Space >
             <Link to='/'>Home</Link>
             <Link to='/exchanges'>Exchanges</Link>
             <Link to='/news'>News</Link>
