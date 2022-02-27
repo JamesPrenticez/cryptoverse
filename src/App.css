@@ -1,3 +1,4 @@
+/* https://gist.github.com/adrianhajdin/1008c664fe7896b316f5efbff8d97935 */
 
 :root{
   --text-primary:#000;
@@ -19,24 +20,18 @@ a:hover{
 }
 
 .app{
-  display: flex;
   overflow: hidden;
 }
 
-.navbar{
-  flex: 0.2;
-  background-color: rgb(0, 21, 41);
-}
-
 .main{
-  flex: 0.8;
-  width: 100%;
-  
+  width: 80%;
+  margin-left: 20%;
 }
 .routes{
   padding: 20px;
 }
 .nav-container{
+  width: 20%;
   position: fixed;
   left: 0;
   margin: 10px;
@@ -55,9 +50,11 @@ a:hover{
 .logo{
   margin:0 0 0 15px;
 }
+
 .logo a{
- color: white;
+ color: red;
 }
+
 .menu-control-container{
   display: none !important;
   position: absolute !important;
@@ -73,65 +70,6 @@ a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media screen and (max-width:1300px){
-  .main{
-      margin-left: 50px;
-  }
-}
-
-@media screen and (max-width:1170px){
-  .main{
-      margin-left: 50px;
-  }
-}
-
-@media screen and (max-width:1000px){
-  .main{
-      margin-left: 100px;
-  }
-}
-
-@media screen and (max-width:800px){
-  .app{
-      flex-direction: column;
-      overflow: hidden;
-  }
-
-  .navbar{
-      flex: 1;
-  }
-
-  .main{
-      flex: 1;
-      margin-top: 90px;
-      margin-left: 0px;
-      margin-right: 10px;
-  }
-
-  .nav-container{
-      height: 8vh;
-      position:fixed;
-      width: 100%;
-      z-index: 100;
-      background-color: var(--bgSecondary);
-  }
-
-  .menu-control-container{
-      display: block !important;
-  }
-
-  .ant-menu{
-      position: absolute;
-      right: 0px;
-  }
-  .home-title{
-      font-size: 1.4rem !important;
-  }
-  .show-more{
-      font-size: 1.3rem !important;
-  }
 }
 
 .coin-detail-container{
@@ -260,32 +198,6 @@ padding: 0px 20px;
 
 .coin-link:hover, .coin-stats:hover{
   background-color: var(--bgSecondary);
-}
-
-@media screen and (max-width:1000px){
-  .stats-container{
-      flex-direction: column;
-  }
-  .coin-desc-link{
-      flex-direction: column;
-  }
-  .stats-container h2{
-      margin-top: 0px;
-  }
-}
-
-@media screen and (max-width: 500px){
-  .coin-links{
-      padding: 0px;
-  }
-  .coin-detail-container{
-      margin: 0;
-  }
-}
-@media screen and (max-width: 500px){
-  .heading{
-      margin-top: 20px;
-  }
 }
 
 .select-news{

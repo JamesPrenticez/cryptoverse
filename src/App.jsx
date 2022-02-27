@@ -8,9 +8,7 @@ import { Navbar, Homepage, Exchanges, Cryptocurrencies, CryptoDetails, News } fr
 const App = () => {
   return (
     <div className='app'>
-      <div className='navbar'>
         <Navbar />
-      </div>
       <main className='main'>
         <Layout>
           <div className='route'>
